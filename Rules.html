@@ -1,81 +1,73 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
-        rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="All.css">
-    </head>
-    
-    <body>
-        <!-- Copy in navbar from Homepage when finished - could template but too
-        much hassle. Also requires changing of active item -->
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="nav nav-pills">
-                            <li>
-                                <a href="Homepage.html">Home</a>
-                            </li>
-                            <li class="active">
-                                <a href="Rules.html">Rules<br></a>
-                            </li>
-                            <ul class="nav navbar-nav navbar-right">
-                                <form class="navbar-form navbar-left" role="login">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Password">
-                                    </div>
-                                    <button type="Login" class="btn btn-default">Submit</button>
-                                </form>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="All.css">
+  </head><body>
+    <!-- Copy in navbar from Homepage when finished - could template but too
+    much hassle. Also requires changing of active item -->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-pills">
+              <li>
+                <a href="Homepage.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="Rules.html">Rules<br></a>
+              </li>
+              <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form navbar-left" role="login">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Password">
+                  </div>
+                  <button type="Login" class="btn btn-default">Log In</button>
+                </form>
+              </ul>
+            </ul>
+          </div>
         </div>
-        <div class="container">
-            <div class="panel">These are the most general rules of the game. See here for any rules specific
-                to the current game</div>
-            <!-- add in hyperlink on here when that page is
-            created (or have the open accordian thing be the current special rules?)-->
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-center">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                            href="#collapseOne">What is Assassins?</a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse">
-                        <div class="panel-body">‘Assassins’ is a game of mock killing. It is fun. We do ask, however,
-                            that for the duration of the game, you live and spend a large proportion
-                            of your time within 6 miles of Carfax tower and in an environment compatible
-                            with the game (so not, for example, a prison). Once you have read these
-                            rules, if you have any questions about them, email the Umpire at umpire@oxfordassassinsguild.org.uk
-                            - who will be more than happy to help.</div>
-                    </div>
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-center">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                            href="#collapsetwo">Killing</a>
-                        </h4>
-                    </div>
-                    <div id="collapsetwo" class="panel-collapse collapse">
-                        <div class="panel-body">“Killing” is using a weapon allowed in the game (see below) upon another
-                            person. You should avoid doing this to innocents (people who are not playing
-                            the game). Both the killer and killed should agree that a kill has taken
-                            place, and send separate kill/death reports to the Umpire. Don’t insist
-                            you’re alive when you’re patently not – it’s bad form.</div>
-                    </div>
-                    <!-- <div class="panel-heading">
+      </div>
+    </div>
+    <div class="container">
+      <div class="panel">These are the most general rules of the game. See here for any rules specific
+        to the current game</div>
+      <!-- add in hyperlink on here when that page is
+      created (or have the open accordian thing be the current special rules?)-->
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What is Assassins?</a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">‘Assassins’ is a game of mock killing. It is fun. We do ask, however,
+              that for the duration of the game, you live and spend a large proportion
+              of your time within 6 miles of Carfax tower and in an environment compatible
+              with the game (so not, for example, a prison). Once you have read these
+              rules, if you have any questions about them, email the Umpire at umpire@oxfordassassinsguild.org.uk
+              - who will be more than happy to help.</div>
+          </div>
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsetwo">Killing</a>
+            </h4>
+          </div>
+          <div id="collapsetwo" class="panel-collapse collapse">
+            <div class="panel-body">“Killing” is using a weapon allowed in the game (see below) upon another
+              person. You should avoid doing this to innocents (people who are not playing
+              the game). Both the killer and killed should agree that a kill has taken
+              place, and send separate kill/death reports to the Umpire. Don’t insist
+              you’re alive when you’re patently not – it’s bad form.</div>
+          </div>
+          <!-- <div class="panel-heading">
           <h4 class="panel-title text-center">
             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
             href="#NAME">TITLE</a>
@@ -85,8 +77,8 @@
           <div class="panel-body">TEXT</div>
         </div>
 		--></div>
-            </div>
-        </div>
-    </body>
+      </div>
+    </div>
+  
 
-</html>
+</body></html>

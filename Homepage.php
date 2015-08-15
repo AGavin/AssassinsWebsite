@@ -1,3 +1,15 @@
+<?php //unknown whether this is the correct way of doing things
+	$Done = 'not yet submitted';
+	if (isset($_POST["login"])) 
+	{
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		
+		$Done='This works';
+	}
+?>
+
+<!DOCTYPE html>
 <html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +19,7 @@
     <link rel="stylesheet" href="All.css">
   </head><body>
     <!-- Make sure the navbar is only altered here and copied into the other
-    files afterward. -->
+    files afterward. There will need to be a seperate navbar for if you are logged in -->
     <div class="section">
       <div class="container">
         <div class="row">
@@ -20,15 +32,19 @@
                 <a href="Rules.html">Rules<br></a>
               </li>
               <ul class="nav navbar-nav navbar-right">
-                <form class="navbar-form navbar-left" role="login">
-                  <!-- currently just a placeholder - does not do anything -->
+                <form class="navbar-form navbar-left" role="form" method="post" action="Homepage.php"><!-- Homepage.php needs changing for each different page???-->
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Password">
+                    <input type="text" class="form-control" id="password" id="password" placeholder="Password">
                   </div>
-                  <button type="Login" class="btn btn-default">Log In</button>
+				  <div class="form-group">
+                    <button id ="login" name="login" type="submit" class="btn btn-default">Log In</button>
+				  </div>
+				  <div class="form-group">
+                    <input type="text" class="form-control" id="test" id="test" placeholder= <?php echo $Done ?> >
+				  </div>
                 </form>
               </ul>
             </ul>
