@@ -1,40 +1,5 @@
-<html><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="All.css">
-  </head><body>
-    <!-- Copy in navbar from Homepage when finished - could template but too
-    much hassle. Also requires changing of active item -->
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="nav nav-pills">
-              <li>
-                <a href="Homepage.html">Home</a>
-              </li>
-              <li class="active">
-                <a href="Rules.html">Rules<br></a>
-              </li>
-              <ul class="nav navbar-nav navbar-right">
-                <form class="navbar-form navbar-left" role="login">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Password">
-                  </div>
-                  <button type="Login" class="btn btn-default">Log In</button>
-                </form>
-              </ul>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+<?php function page_contents() {
+?>
     <div class="container">
       <div class="panel">These are the most general rules of the game. See here for any rules specific
         to the current game</div>
@@ -79,6 +44,8 @@
 		--></div>
       </div>
     </div>
-  
-
-</body></html>
+	
+<?php }
+}
+include("src/main.php");
+?>
