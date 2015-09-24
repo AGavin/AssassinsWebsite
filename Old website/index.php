@@ -100,7 +100,7 @@ and suggests you seek psychiatric help. Post-haste.
 <br> Ever wanted to have a gun battle at 2AM in somebody else's college?
 <p> Then the Oxford Guild of Assassins is for you...
 
-<p><a href="termcard.doc">Click here for this term's Termcard...</a>
+<p><a href="Termcard.pdf">Click here for this term's Termcard...</a>
 
 <p>If you are already a member, login above to join in games.
 
