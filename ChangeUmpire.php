@@ -13,6 +13,14 @@ $sql="UPDATE players SET team='NOTEAM' WHERE team='umpire'";
 $sql="UPDATE players SET team='umpire' WHERE id=".$_SESSION['uid'];
                       $result=mysql_query($sql,$link) or die($mysql_error());
 					  
+					  if(member_type()=='umpire'){}?>
+						<p>Sucess! You are now the umpire<?
+						}
+					  else{
+						  ?><p>Unfortunately that did not work<?
+					  }
+					  
+					  
 }
 include("src/main.php");
 ?>
